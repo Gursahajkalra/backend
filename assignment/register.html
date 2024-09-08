@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Medium Clone</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+    <!-- Registration Form Section -->
+    <section class="register-section">
+        <div class="register-container">
+            <h2>Create an Account</h2>
+            <form id="registerForm">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="register-btn">Register</button>
+            </form>
+            <p>Already have an account? <a href="login.html">Sign In</a></p>
+        </div>
+    </section>
+
+    <!-- Footer Links -->
+    <footer>
+        <div class="container footer-links">
+            <ul>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to handle form submission and redirection
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Simulate a successful registration
+            // In a real application, you would handle this with server-side code and authentication
+            window.location.href = 'user.html'; // Redirect to the user page
+        });
+    </script>
+</body>
+</html>
